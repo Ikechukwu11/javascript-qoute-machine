@@ -2,7 +2,9 @@ window.onload = init;
 function init() {
 	document.getElementById("twitterButton").href = "https://twitter.com/intent/tweet?text=" + quoteArea.innerHTML;
 	document.getElementById("emailButton").href = "mailto: ?subject=kEkEsMoViC Javascript Random Quote&body=" + quoteArea.innerHTML;
-    document.getElementById("fbButton").href = "http://www.facebook.com/sharer.php?u=" +  quoteArea.innerHTML;
+        document.getElementById("fbButton").href = "http://www.facebook.com/sharer.php?u=" +  quoteArea.innerHTML;
+	 document.getElementById("WButton").href = "whatsapp://send?text=" +  quoteArea.innerHTML;
+
 }
 // Array of arrays to hold quote and corresponding image of the character who said it
 // Need 250x250 image of all of these people in the img folder of this projects directory
@@ -86,7 +88,8 @@ change();
 	document.getElementById("years").innerHTML = quoteArray[randomNumber][3];
 	document.getElementById("twitterButton").href = "https://twitter.com/intent/tweet?text=" + quoteArray[randomNumber][0];
 	document.getElementById("emailButton").href = "mailto: ?subject=kEkEsMoViC Javascript Random Quote&body=" + quoteArray[randomNumber][0];
-    document.getElementById("fbButton").href = "http://www.facebook.com/sharer.php?u=" +  quoteArray[randomNumber][0];
+        document.getElementById("fbButton").href = "http://www.facebook.com/sharer.php?u=" +  quoteArray[randomNumber][0];
+	document.getElementById("WButton").href = "whatsapp://send?text=" +  quoteArray[randomNumber][0] ;
     characterPhoto.width = 250;
     characterPhoto.height = 250;
     characterPhoto.class = "img-responsive, img-circle";
